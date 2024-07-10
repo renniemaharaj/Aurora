@@ -1,0 +1,1 @@
+<div id="slideshow" class="hidden skeleton-product-image"></div>

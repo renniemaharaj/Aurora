@@ -1,0 +1,26 @@
+#taglines{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    margin-top: 20px;
+}
+.tagline{
+    width: 100%;
+    text-align: center;
+    color: var(--fontcolor);
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    animation: 400ms taglineappear forwards;
+    position: absolute;
+}
+@keyframes taglineappear {
+    0%{
+        margin-top: -100px;
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        margin-top: unset;
+    }
+    
+}

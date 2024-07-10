@@ -1,0 +1,29 @@
+@media(max-width: 768px) {
+    .cart-item {
+        flex-wrap: wrap;
+    }
+    .item-info {
+        margin-bottom: 10px;
+    }
+    .product{
+        max-width: 47%;
+        width: 47%;
+    }
+    .showcase {
+        width: 100%;
+        padding: 1px;
+        justify-content: center;
+    }
+    .-showcase{
+        width: 100% !important;
+    }
+    .skeleton{
+        width: 100% !important;
+    }
+    #contact{
+        padding: 0;
+    }
+    #controller{
+        max-width: 100%;
+    }
+}

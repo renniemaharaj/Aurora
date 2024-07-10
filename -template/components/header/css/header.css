@@ -1,0 +1,84 @@
+.header {
+    background: linear-gradient(to right, var(--complement), var(--accent));
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: 300ms linear;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+.header div {
+    flex: 1;
+}
+
+.headerright, .headerleft {
+    flex:1;
+    display: flex;
+    flex-grow: unset;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+}
+
+.header div button, #category button{
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--defaultfont);
+    color: var(--casewhite);
+    background-color: transparent;
+    /* transition: 100ms ease-in-out; */
+    font-size:medium;
+    /* font-variant: small-caps; */
+    cursor: pointer;
+}
+.header div a, #category a{
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--defaultfont);
+    color: var(--casewhite);
+    background-color: transparent;
+    transition: 300ms linear;
+    font-size:medium;
+    /* font-variant: small-caps; */
+    text-decoration: none;
+    cursor: pointer;
+}
+header div a:hover{
+    background-color: var(--accent);
+}
+.header div button:hover {
+    background-color: var(--accent);
+}
+.headerwriting{
+    color: var(--casewhite);
+}
+#category a:hover{
+    background-color: var(--accent);
+}
+#category button:hover{
+    background-color: var(--accent);
+}
+#category{
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--complement), var(--accent)) !important;
+    transition: 300ms ease-in-out;
+    box-sizing: border-box;
+}
+.categoryextend{
+    padding: 10px !important;
+    height: 20% !important;
+    width: 100%; /* Ensures it takes the full width of its container */
+    max-width: 100%;
+}
+#category-list li{
+    position: relative;
+    margin-top: 10px;
+}

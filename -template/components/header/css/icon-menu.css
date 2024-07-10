@@ -1,0 +1,41 @@
+.icon-menu{
+    background-color: var(--complement);
+    width: 16px;
+    height: 16px;
+    max-width: 16px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    gap:3px;
+    cursor: pointer;
+    transition: 300ms;
+    vertical-align: middle;
+}
+.icon-menu-bar{
+    background-color: var(--casewhite);
+    border-radius: 5px;
+    /* margin-top: 3px; */
+    min-height: 5%;
+    width: 100%;
+}
+/* .icon-menu:hover{
+    border: 2px solid var(--icon-bar-default-back);
+} */
+.icon-menu:hover .icon-menu-bar{
+    animation: icon-menu-animate-hover 1s infinite;
+}
+
+@keyframes icon-menu-animate-hover {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+    
+}

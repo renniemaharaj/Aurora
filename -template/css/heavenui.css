@@ -1,0 +1,271 @@
+:root {
+    --transition_bounce: cubic-bezier(.47, 1.64, .41, .8);
+    --body_color: #18191a;
+    --base_layer: #212529;
+    --accent_one_color: cornflowerblue;
+    --text_color: white;
+    --base_layer2: #343a40;
+    --accent_hover: rgb(132, 109, 153);
+
+    /* --background: white;
+    --complement: pink;
+    --accent: rgb(67, 85, 98);
+    --defaultfont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontcolor: black;
+    --casewhite: white;
+
+    --icon-default-back: pink;
+    --icon-bar-default-back: white; */
+}
+.heavenui_transition_bounce{
+    transition: 300ms var(--transition_bounce);
+}
+.heavenui_transition_fast{
+    transition: 100ms linear;
+}
+.heavenui_transition_cool{
+    transition: 1s linear;
+}
+.heavenui_body_color{
+    background-color: var(--body_color);
+}
+.heavenui_base_color{
+    overflow: hidden;
+    background-color: var(--base_layer);
+}
+.heavenui_disappear{
+    display: none;
+}
+.heavenui_visible_invisible{
+    opacity: 0;
+}
+.heavenui_visible_slighty{
+    opacity: 0.7;
+}
+.heavenui_visible_fully{
+    opacity: 1;
+}
+.heavenui_cover_dom{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.heavenui_scroll_invisible::-webkit-scrollbar {
+    display: none;
+}
+.heavenui_base_tile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 300ms var(--transition_bounce);
+    border-radius: 10px;
+    color: var(--text_color);
+}
+.heavenui_minimum_size_small_rect{
+    min-width: 350px;
+    min-height: 50px;
+}
+.heavenui_focussed_center_tile{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 90%;
+    transform: scale(1) translate(-50%, -50%);
+    box-shadow: 0px 0.2px 5px var(--accent_one_color);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.heavenui_top_handle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    position:sticky;
+    top: 0;
+    left: 0;
+
+}
+.heavenui_tophandle_real_estate{
+    flex: 3;
+}
+.heavenui_tophandle_header{
+    color: var(--accent_one_color);
+    padding-left: 2px;
+}
+.heavenui_tophandle_controls{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+.heavenui_tophandle_icon_interact{
+    border-radius: 50%;
+    transition: var(--transition_bounce);
+    color: var(--text_color);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.heavenui_tophandle_icon_interact:hover{
+    background-color: var(--accent_one_color);
+}
+.heavenui_form{
+    overflow-y: scroll;
+}
+.heavenui_button_flat{
+    cursor: pointer;
+    color: var(--text_color);
+    padding: 2px;
+    background-color: var(--accent_one_color);
+}
+.heavenui_button_fancy{
+    cursor: pointer;
+    color: var(--text_color);
+    padding: 2px;
+    background-color: var(--accent_one_color);
+}
+.heavenui_button_fancy{
+    transition: 300ms var(--transition_bounce);
+    box-shadow: 0px 0.2px 5px var(--accent_one_color);
+}
+.heavenui_button_fancy:hover{
+    border-radius: 5px;
+}
+.heavenui_textbox{
+    padding: 2px;
+    color: var(--text_color);
+    width: auto;
+    display: inline;
+    border: 2px solid var(--accent_hover);
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.heavenui_timeout_bar{
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: var(--accent_one_color);
+}
+.heavenui_dom_statusbar{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 2px;
+    width: auto;
+    min-width: 100px;
+    z-index: 10;
+}
+.heavenui_dom_statusbar_text{
+    color: var(--text_color);
+}
+.heavenui_contain_options::-webkit-scrollbar {
+    display: none;
+}
+.heavenui_media_ball{
+    margin: 2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+.heavenui_options_unfocus{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: var(--accent);
+    animation: heavenui_options_unfocus_animation 1s var(--transbounce) forwards;
+}
+@keyframes heavenui_options_unfocus_animation {
+    100%{
+        opacity: 0.4;
+        transform: scale(0.5);
+        /* display: none; */
+    }
+}
+.heavenui_shake {
+    animation: 500ms var(--transbounce) heavenui_shake_animation forwards;
+}
+@keyframes heavenui_shake_animation {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+
+}
+.heavenui_contain_options_parent{
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 5;
+    bottom: 0;
+}
+.heavenui_contain_options{
+    background-color: transparent;
+    transition: 300ms linear;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+.heavenui_arrow{
+    flex-grow: 0;
+    transition:  100ms ease-in-out;
+    z-index: 3;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+.heavenui_arrow:hover{
+    transform: scale(1.5);
+}
+.heavenui_arrow_back{
+    display: flex;
+    justify-content: right;
+    left: 30%;
+}
+.heavenui_arrow_forward{
+    display: flex;
+    justify-content: left;
+    right: 30%;
+}
+.mediaball {
+    background-color: black;
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+    margin: 5px;
+}
+.mediaball:hover{
+    background-color: var(--accent);
+}

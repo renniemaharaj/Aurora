@@ -1,0 +1,77 @@
+{
+    "Document": {
+        "title": "unset_title",
+        "description": "unset_description",
+        "keywords": ["unset_keyword1", "unset_keyword2"],
+        "author": "unset_author",
+        "charset": "UTF-8",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "canonical": "unset_canonical_url",
+        "open_graph": {
+            "enabled": false,
+            "og_title": "unset_og_title",
+            "og_type": "website",
+            "og_image": "unset_og_image_url",
+            "og_url": "unset_og_url",
+            "og_description": "unset_og_description"
+            },
+        "twitter_card": {
+            "enabled":false,
+            "twitter_card": "summary",
+            "twitter_site": "@unset_twitter_site",
+            "twitter_creator": "@unset_twitter_creator",
+            "twitter_title": "unset_twitter_title",
+            "twitter_description": "unset_twitter_description",
+            "twitter_image": "unset_twitter_image_url"
+        },
+        "language": "en",
+        "favicon": "unset_favicon_url",
+        "theme_color": "#ffffff",
+        "robots": "index, follow",
+        "alternate_links": [],
+        "image_alt": "unset_alt_text",
+        "Components":[
+            "sha256",
+            "header",
+            "taglines",
+            "slideshow",
+            "skeleton",
+            "shop"
+    ]
+    },
+    "Colouring": {
+        "Background": "#5b7b86",
+        "Accent": "#6F8A9B",
+        "Compliment": "#7f7f7a",
+        "DefaultFont": "#dab83e",
+        "AccentFont": "#ffffff"
+    },
+    "Founder": {
+        "FirstName": "unset_fname",
+        "LastName": "unset_lname",
+        "Email": "something@gmail.com",
+        "Platforms": {
+            "Facebook": "unset_facebook_link",
+            "Instagram": "unset_instagram_link",
+            "Twitter": "unset_twitter_link"
+        },
+        "Biography": "unset_biography",
+        "Avatar": []
+    },
+    "General": {
+        "SectionCatalogueWriting": "What we're offering",
+        "SectionPlatformsWriting": "Find us on these",
+        "SectionReviewsWriting": "Leave us a review",
+        "SlideShow": false,
+        "AnimationSpeed": 0.5,
+        "TaglineSpeed": 600,
+        "SlideShowSpeed": 2000,
+        "Taglines": [
+            "Configure your website in the controller",
+            "Pick from a wide range of colors",
+            "Add your products and services to sell",
+            "Make something great with Aurora!"
+        ],
+        "SlideShowList": []
+    }
+}

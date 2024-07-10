@@ -1,0 +1,110 @@
+.product {
+    width: 170px;
+    max-width: 170px;
+    flex: 0 1 auto;
+    background-color: var(--accent);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.product h2 {
+    font-size: 0.8em;
+    border-bottom: 2px solid #f0f2f5;
+}
+
+.product .skeleton-image{
+    width: 100%;
+    aspect-ratio: 1/1 !important;
+}
+.product img {
+    width: 100% !important;
+    height: 100% !important;
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product .price {
+    font-size: 0.8rem;
+    color: #e67e22;
+    /* margin: 15px 0; */
+}
+
+.product .currency {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.product .stock {
+    font-size: 0.8rem;
+    color: #2ecc71;
+}
+
+.product .out-of-stock {
+    font-size: 0.8rem;
+    color: #e74c3c;
+}
+
+.product .description {
+    font-size: 1em;
+    color: #444;
+    max-height: 3em; /* Adjust this value if necessary, usually 2 * line-height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5em; /* Set line height to match your design */
+    height: 3em; /* Same as max-height to ensure it fits 2 lines */
+    padding: 2px;
+}
+
+.skeleton-image {
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    animation: shimmer 1.5s infinite linear;
+    position: relative;
+    overflow: hidden;
+}
+
+.stock-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between stock status and button */
+}
+
+.interested-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: background-color 0.3s;
+}
+#delete-button{
+    display: block !important;
+}
+
+.interested-button:hover {
+    background-color: #45a049;
+}
+
+.stock-container{
+    display: flex;
+    justify-content: right;
+}
+.out-of-stock{
+    max-width: 40%;
+    line-break: loose;
+    color: red;
+}

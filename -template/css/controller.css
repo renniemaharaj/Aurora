@@ -1,0 +1,214 @@
+/* :root {
+    --background: white;
+    --complement: pink;
+    --accent: rgb(67, 85, 98);
+    --defaultfont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fontcolor: black;
+    --casewhite: white;
+
+    --icon-default-back: pink;
+    --icon-bar-default-back: white;
+} */
+
+#controller{
+    max-width: 450px;
+    max-height: 450px;
+    width: 450px;
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--complement);
+    transition: 300ms ease-in-out;
+    animation: revealcpanel 300ms ease-in-out forwards;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.controller-section{
+    padding-bottom: 10px;
+}
+.controller-flex{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    display: flex;
+}
+.controller-section h3 {
+    width: 100%;
+    text-align: center;
+    background-color: var(--complement);
+    color: var(--casewhite);
+}
+.controller-hidden{
+    bottom: -100% !important;
+}
+@keyframes revealcpanel {
+    0%{bottom: -100%;}
+    100%{bottom: 10px;}
+}
+.controllerwriting{
+    width: 100%;
+    text-align: center;
+    color: var(--casewhite);
+}
+
+form {
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--accent)
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+input[type="number"] {
+    width: 70px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add more styling for better visuals */
+.controller-hidden {
+    display: none;
+}
+
+/* Style for form labels */
+.controller-hidden label {
+    display: none;
+}
+
+/* Custom styling for color inputs */
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper:hover {
+    cursor: pointer;
+}
+#controller-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#controller-media{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.controller-span-action{
+    color: var(--casewhite);
+    padding: 2px;
+    font-size: 1rem !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.controller-span-action:hover{
+    background-color: #45a049;
+}
+.scale0{
+    transition: all 300ms ease-in-out;
+    transform: scale(0);
+    animation: scale0 300ms forwards;
+}
+@keyframes scale0 {
+    100%{
+        display: none;
+    }
+    
+}
+#controller-orders-list tr {
+    border-bottom: 1px solid white;
+}
+#controller-orders-list-div{
+    padding: 5px;
+    max-width: 100% !important;
+    width: 100% !important;
+    background-color: var(--accent);
+    font-size: 1rem;
+    padding-bottom: 60px;
+    max-height: 400px;
+    overflow: scroll !important;
+
+}
+.orders-action{
+    padding: 2px;
+    cursor: pointer;
+    color: var(--casewhite);
+}
+#following-arrows{
+    position: fixed;
+    margin-top: 0;
+    width: 50%;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    min-height: 5px;
+    background-color: var(--complement);
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.following-arrow{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: var(--casewhite);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+.following-arrow:hover{
+    transform: scale(1.2);
+}
+#controller-version-info{
+    font-size: 0.8rem;
+}
